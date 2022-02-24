@@ -1,0 +1,225 @@
+body{
+	background-color: grey;
+	font-family: verdana;
+	margin-left: 10%;
+	height: 100vh;
+}
+
+hr{
+	border:1px solid lightgrey;
+}
+
+.mainbody{
+	background-color: white;
+	padding: 20px;
+	height: auto;
+	width: 80%;
+	font-size: 0.85em;
+}
+
+.headerLeft{
+	color: black;
+	width: 70%;
+	float: left;
+}
+
+.headerRight{
+	width: 30%;
+	float: right;
+}
+
+.headerLeft .button{
+	background-color: #E53E3E;
+	padding: 5px;
+	border-radius: 10%;
+	color: white;
+}
+
+#heading{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.textBox{
+	border: 1px solid grey;
+	padding: 3px;
+	font-size: 0.98em;
+}
+
+.logo{
+	height: 55px;
+	width: 70%;
+	padding: 10px;
+	border: 1px dashed black;
+	margin-left: 20%;
+	margin-bottom: 10px;
+}
+
+.currency{
+	width: 100%;
+	background-color: #E2E2E2;
+	padding: 4px;
+	border: 2px solid lightgrey;
+	margin-top: 4px;
+}
+
+#inText{
+	background-color:lightgrey;
+	padding:3px;
+	font-size: 1.1em;
+	padding-bottom: 6px;
+}
+
+#invoice{
+	padding: 4px;
+	width: 20%;
+	margin-top: 4px;
+	border: 2px solid lightgrey;
+}
+
+input:focus, textarea:focus{
+	outline: none;
+}
+
+#lang{
+	padding: 4px;
+	width: 50%;
+	margin-top: 4px;
+	border: 2px solid lightgrey;
+	background-color: #E2E2E2;
+}
+
+#toArea{
+	resize: none;
+	background-color: #E2E2E2;
+	margin-top: 4px;
+	border: 2px solid lightgrey;
+	width: 40%;
+	font-size: 1.5em;
+}
+
+.headerRight input{
+	width: 95%;
+	padding: 4px;
+	border: 2px solid lightgrey;
+	margin-top: 4px;
+}
+
+table{
+	width: 100%;
+	text-align: center;
+}
+
+th{
+	padding: 2px;
+	border-bottom: 1px solid lightgrey;
+}
+
+td{
+	border-bottom: 1px solid lightgrey;
+	padding: 10px;
+}
+
+table td input{
+	border: 2px solid lightgrey;
+}
+
+.product{
+	width: 60%;
+	color: black;
+}
+
+.product input{
+	width: 90%;
+}
+
+.clone{
+	background-color: #E2E2E2;
+	border: 2px solid lightgrey;
+	padding: 3px;
+}
+
+.newLine{
+	margin-top: 10px;
+	margin-left: 5px;
+	background-color: #8BA3B7;
+	border: 2px solid #8098AD;
+	border-radius: 6%;
+	color: white;
+	padding: 3px;
+	float: left;
+}
+
+.divRight{
+	width: 40%;
+	padding: 10px;
+	height: 20%;
+	float: right;
+}
+
+.amt{
+	width: 90%;
+	border: 2px solid lightgrey;
+}
+
+#subtotal{
+	float: right;
+}
+
+#tax{
+	float: right;
+}
+
+#total{
+	float: right;
+}
+
+#curr{
+	float: left;
+}
+
+#rowAmt{
+	float: right;
+	text-align: right;
+	border: none;
+	background-color: white;
+	width: 70%;
+}
+
+.btnTotal{
+	margin-top: 20px;
+	width: 97%;
+	border: 3px solid #E53E3E;
+	border-radius: 5%;
+	padding:5px 5px 5px 0px;
+	font-weight: bolder;
+}
+
+#btnText{
+	background-color:#E53E3E;
+	padding:5px;
+	color: white;
+	border: 2px solid #E53E3E;
+	border-radius: 5%;
+	font-size: 1.1em;
+}
+
+.taxBox{
+	border: 2px solid lightgrey;
+	padding: 2px;
+}
+
+.taxBox input{
+	width: 4%;
+	border: none;
+	border-left: 2px solid lightgrey;
+}
+
+.divRight hr{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#btnAmt{
+	float: right;
+}

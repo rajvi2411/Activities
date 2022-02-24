@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="invoice.js"></script>
+	<title>Invoice</title> 
+</head>
+<body>
+	<div class="mainbody">
+		<div class="headerLeft">
+			<br>
+			<label class="button"> DUE </label> &nbsp;&nbsp;
+			<label id="heading">Invoice</label> &nbsp;<br><br><br>
+			<label class="textBox">Thank you for your purchase. Timely payment will be appreciated.
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<br><br><br>
+			<div class="headerLeft">
+				<b>Invoice No.</b><br>
+				<label id="inText"> # </label>
+				<input type="text" id="invoice"><br>
+			</div>
+			<div class="headerRight">
+				<b>Language</b><br>
+				<input type="text" id="lang" value="English (US)" disabled><br>
+			</div>
+
+		</div>
+		<div class="headerRight">
+			<br>
+			<img src="logo.png" class="logo"> 
+			<br><br>
+			<b>Currency</b> <br>
+			<select class="currency" id="currency">
+				<option> -- Select -- </option>
+				<option value="GBP"> British Pound - GBP</option>
+				<option value="INR"> Indian Rupee - INR</option>
+				<option value="EUR"> Euro - EUR</option>
+				<option value="SGD"> Singapore dollar - SGD</option>
+				
+			</select>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<hr><br>
+
+		<!-- To,from and other details -->
+		<div>
+			<div class="headerLeft">
+				<b> From </b><br>
+				<label style="margin-top: 4px;">Tatva Business Inc.<br></label>
+				B-302, Ramya Business Park,<br>
+				Pimpri, <br>Pune - 411012<br>
+				India<br><br>
+				<b> To </b><br>
+				<textarea rows="5" id="toArea"></textarea>
+			</div>
+			<div class="headerRight">
+				<b>Date</b><br><input type="date"><br><br>
+				<b>Invoice due</b><br>
+				<select class="currency">
+					<option> --- Select ---</option>
+					<option> After 5 Days</option>
+					<option> After 10 Days</option>
+					<option> After 15 Days</option>
+					<option> After 20 Days</option>
+					<option> After 30 Days</option>
+				</select><br><br>
+				<b>Purchase Order No</b><br><input type="text"><br><br>
+			</div>
+		</div>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+
+		<!--- Product Table --->
+		<div>
+			<table cellpadding="0"  cellspacing="0" >
+				<tr>
+					<th>Name</th>
+					<th>Quantity</th>
+					<th>Rate</th>
+					<th>Amount</th>
+				</tr>
+				<tr id="items">
+					<td class="product"><input type="text" placeholder="Item Name"> 
+						<button class="clone" id="clone" onclick="cloneRow();"><i class="fa fa-files-o"></i> </button>
+					</td>
+					<td style="width:10%" id="qtd"><input type="number" min=1 style="width:90%" id="qty"
+						class="qty" value="1"></td>
+					<td style="width:10%" id="ptd"><input type="text" style="width:90%" id="price" 
+						class="price" value="0.00"></td>
+					<td style="width:20%" id="rtd">
+						<label id="curr" class="curr">--</label> 
+						<input type="text" id="rowAmt" value="00.00" disabled> 
+					</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<div style="width:100%">
+			<div class="divLeft"> 
+				<button class="newLine" id="new">New Line</button> 
+			</div>
+			<div class="divRight">
+				Sub Total  <label id="subtotal">00.00</label><br>
+				<hr>
+				<label class="taxBox"> Value Added Tax &nbsp;&nbsp;
+					<input type="text" id="per" value="10">%  <label id="tax">00.00</label>
+				</label><br>
+				<hr>
+				<b>Total  <label id="total">00.00</label> </b><br>
+				<div class="btnTotal">
+					<label id="btnText"> Total Due</label>
+					<label class="btn"> <label id="btnCurr">--</label> 
+					<label id="btnAmt"> 00.00</label> </label>  <br>
+				</div>
+			</div>
+			<br><br><br><br><br><br><br><br><br><br>
+		</div>
+
+	</div>
+</body>
+ 
+
+</html>
